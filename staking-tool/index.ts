@@ -15,12 +15,6 @@ const program = new commander.Command();
 program
   .version("1.0.0")
   .description("Core chain self custody BTC staking command line tool.");
-  program.command("x").description("x").action(() => {
-    const qr_data = "cHNidP8BAK8CAAAAAUKIJ/2nWQhFb0FIgNz8BOGTKPogbYSom5YHmuHxAWauAQAAAAD/////AmQAAAAAAAAAF6kUhtPaJLMZVoHlSChJ3ymGdZ23M9aHAAAAAAAAAABTakxQU0FUKwEEWCpfljuse/E29qD/mDVrUvC0mvcaOuAw3DcXxm9j1ujx0VCKXJQf9G0ABBafRmaxdXapFFdKqwTcmRKVFxLXSUKG3ZIxafghiKwAAAAAAAEBHyQTAAAAAAAAFgAUV0qrBNyZEpUXEtdJQobdkjFp+CEBALUCAAAAAAEByMCfGaMJAR2PfmQfuC1UkKYX9x4y62e3jA5GlHg4FlUBAAAAAP3///8CxzacCwAAAAAWABSt6M+mzohZsBMW8ObsTA0n+/E8riQTAAAAAAAAFgAUV0qrBNyZEpUXEtdJQobdkjFp+CEBQLUGUQ88xxIIUp6K0lO0PNw3Sn8mGt1U3QgsUu+dxZy5bbemyKPAx5S86IrXQaUo0qOX0iohnYNFA8/Z0iw9CJMV9ioAIgYDB6xNXJPUjNlwxJsdVxmsHPUd+6U1hWJvI6EqBzlCwhUQxWqSbAAAAIAAAAAAAAAAAAAAAA==";
-    const buffer = Buffer.from(qr_data, 'base64');
-    let rawTransactionHex = buffer.toString('hex');
-    console.log(rawTransactionHex);
-  });
   program
   .command("get-pubkey")
   .description("Get the public key of a private key.")
