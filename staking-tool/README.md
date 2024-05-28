@@ -8,6 +8,8 @@ npx webpack --config webpack.config.js
 
 ## How to stake & unstake bitcoins
 
+Download electrum. Private key is expected to be in WIF format when interacting with the CLI tool.
+
 A walkthrough using test data. Replace with your own data. Use https://www.epochconverter.com/ to get the unix epoch time.
 
 You can broadcast your signed BTC transaction on one of the following websites:
